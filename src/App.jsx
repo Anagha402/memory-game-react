@@ -8,7 +8,7 @@ import { useState, useEffect } from 'react';
 
 function App() {
 
-  const [timeLeft, setTimeLeft] = useState(70);
+  const [timeLeft, setTimeLeft] = useState(60);
   const [gameStatus, setGameStatus] = useState('');
   const [timer, setTimer] = useState(null);
 
@@ -54,9 +54,9 @@ function App() {
     <h1 className=' text-light fw-bolder ' style={{fontSize:"65px", marginLeft:"400px", textShadow:"2px 2px 1px black"}}>Memory Game</h1>
     <div className="container  d-flex">
     
-    <Cards  timeLeft={timeLeft} setGameStatus={setGameStatus} restartGame={restartGame}  />
+    <Cards   setGameStatus={setGameStatus}   />
 
-    <Sidebar timeLeft={timeLeft} restartGame={restartGame} gameStatus={gameStatus} />
+    <Sidebar timeLeft={timeLeft}  gameStatus={gameStatus} />
     
     </div>
       

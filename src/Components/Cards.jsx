@@ -9,7 +9,7 @@ import pot from '../assets/images/pot.svg'
 import pumpkin from '../assets/images/pumpkin.svg'
 import skull from '../assets/images/skull.svg'
 
-function Cards({ timeLeft, setGameStatus, restartGame }) {
+function Cards({  setGameStatus }) {
     const[items,setItems]=useState([
         {id:1, img: broom , status:''},
         {id:1, img: broom, status:''},
